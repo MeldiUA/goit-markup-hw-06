@@ -1,0 +1,444 @@
+/*<===================== HERO section ===============================================================================>*/
+
+.main-section {
+  background: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../../images/hero/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  flex-shrink: 0;
+  max-width: 320px;
+  height: 432px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/hero-mobile@2x.jpg);
+  }
+}
+
+.title-main {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  width: 220px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 72px;
+}
+
+.btn-order-service {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  background: #4d5ae5;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-order-service:hover,
+.btn-order-service:focus {
+  background-color: #404bbf;
+}
+
+/* ========== HERO SECTION TABLET =======================> */
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    max-width: 768px;
+    height: 436px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/hero-tablet.jpg);
+  }
+
+  @media screen and (min-resolution: 192dpi) and (max-width: 1157px),
+    screen and (min-resolution: 2dppx) and (max-width: 1157px),
+    screen and (min-device-pixel-ratio: 2) and (max-width: 1157px) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../../images/hero/hero-tablet@2x.jpg);
+    }
+  }
+
+  .title-main {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    width: 496px;
+  }
+}
+
+/* ========== HERO SECTION DESCTOP =======================> */
+
+@media screen and (min-width: 1158px) {
+  .main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../../images/hero/hero-desktop.jpg);
+    padding-bottom: 188px;
+    padding-top: 188px;
+    max-width: 1440px;
+    height: 600px;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+    screen and (min-resolution: 2dppx) and (min-width: 1158px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+    .main-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../../images/hero/hero-desktop@2x.jpg);
+    }
+  }
+
+  .title-main {
+    margin-bottom: 48px;
+  }
+}
+
+/*<=================================================================== CHARACTERISTICS SECTION ==============================================>*/
+
+.chracteristics-container-icon {
+  display: none;
+}
+
+.chracteristics-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 72px;
+}
+
+.chracteristics-list-item {
+  width: 100%;
+}
+
+.title-chracteristics {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.description-characteristic {
+  color: #434455;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ========== CHARACTERISTICS SECTION TABLET =======================> */
+
+@media screen and (min-width: 768px) {
+  .chracteristics-list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .chracteristics-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .title-chracteristics {
+    text-align: start;
+  }
+}
+
+/* ========== CHARACTERISTICS SECTION DESCTOP =======================> */
+
+@media screen and (min-width: 1158px) {
+  .chracteristics-container-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+  }
+
+  .title-chracteristics {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+
+  .chracteristics-list-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .description-characteristic {
+    font-weight: 400;
+  }
+}
+
+/* ======================================= OUR TEAM SECTION ================================================================> */
+
+.our-team-section {
+  flex-shrink: 0;
+  background-color: #f4f4fd;
+}
+
+.title-our-team {
+  color: #2e2f42;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  /* text-wrap: nowrap; */
+}
+
+.our-team-list {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  gap: 72px;
+}
+
+.item-our-team-list {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  width: 264px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.description-photo-member {
+  text-align: center;
+  padding: 32px 0;
+}
+
+.name-member-team {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.position-member {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.list-social-link-member {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.item-social-link-member {
+  width: 40px;
+  height: 40px;
+}
+
+.social-link-member {
+  flex-shrink: 0;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-member:focus,
+.social-link-member:hover {
+  background-color: #404bbf;
+}
+
+.social-link-member-icon {
+  fill: #f4f4fd;
+}
+
+/* ========== OUR TEAM  SECTION TABLET =======================> */
+
+@media screen and (min-width: 768px) {
+  .our-team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+}
+/* ========== OUR TEAM  SECTION DESCTOP =======================> */
+
+@media screen and (min-width: 1158px) {
+  .our-team-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+
+  .item-our-team-list {
+    width: calc((100% - 72px) / 4);
+  }
+}
+
+/* ================================================== OUR PORTFOLIO  SECTION ====================================================> */
+
+.overlay-portfolio {
+  display: none;
+}
+
+.title-our-portfolio {
+  text-align: center;
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+}
+
+.list-our-portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.description-photo-portfolio {
+  text-align: left;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
+.title-item-portfolio {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.description-item-portdolio {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* ========== OUR PORTFOLIO  SECTION TABLET =======================> */
+
+@media screen and (min-width: 768px) {
+  .list-our-portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .our-portfolio-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+/* ========== OUR PORTFOLIO SECTION DESCTOP =======================> */
+
+@media screen and (min-width: 1158px) {
+  .our-portfolio-item {
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .our-portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+      0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  }
+
+  .portfolio-list-image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .overlay-portfolio {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #4d5ae5;
+    color: #f4f4fd;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .our-portfolio-item:hover .overlay-portfolio {
+    transform: translateY(0%);
+  }
+}

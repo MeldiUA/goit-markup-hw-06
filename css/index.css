@@ -1,0 +1,17 @@
+/* @import "~modern-normalize/modern-normalize.css"; */
+
+/* ========= BASE =============== */
+@import "./base/common.css";
+@import "./base/container.css";
+@import "./base/section.css";
+
+/* =========== UTILS ================ */
+
+@import "./utils/visually-hidden.css";
+
+/* ========== LAYOUT ============== */
+
+@import "./layout/header.css";
+@import "./layout/main.css";
+@import "./layout/footer.css";
+@import "./layout/backdrop-review.css";
