@@ -122,9 +122,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   padding: 8px 24px;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   text-align: center;
   font-size: 16px;
@@ -143,8 +145,8 @@
 
 /* ========== FOOTER SECTION TABLET =======================> */
 @media screen and (min-width: 768px) {
-  .footer-section {
-    padding-left: 92px;
+  .logo-footer {
+    text-align: left;
   }
 
   .footer-container {
@@ -154,6 +156,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     column-gap: 24px;
+    padding-left: 92px;
   }
 
   .description-footer {
@@ -172,6 +175,10 @@
   .subscribe-footer-text {
     text-align: left;
   }
+
+  .footer-subscribe-input {
+    width: 264px;
+  }
 }
 
 /* ========== FOOTER SECTION DESCTOP =======================> */
@@ -189,6 +196,7 @@
     align-items: baseline;
     flex-wrap: nowrap;
     gap: 0;
+    padding-left: 15px;
   }
 
   .about-us-container-footer {
