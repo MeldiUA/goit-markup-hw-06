@@ -156,7 +156,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     column-gap: 24px;
-    padding-left: 92px;
+    width: 552px;
   }
 
   .description-footer {
@@ -197,6 +197,7 @@
     flex-wrap: nowrap;
     gap: 0;
     padding-left: 15px;
+    width: 1158px;
   }
 
   .about-us-container-footer {
